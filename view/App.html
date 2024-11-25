@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <title>GTL App</title>
+</head>
+<body>
+<main>
+    <section>
+        <h1>Análise Geral</h1>
+        <form id="upload-form">
+            <label for="fileToUpload">Importar Excel:</label>
+            <input type="file" id="fileToUpload" accept=".csv">
+            <input type="button" value="Upload Arquivo" onclick="uploadFile()">
+        </form>
+        <button id="exportButton" class="hidden">Exportar para Excel</button>
+        <div id="results" class="results-container">
+            <!-- Resultados da análise -->
+        </div>
+    </section>
+</main>
+<script src="js/script.js"></script>
+</body>
+</html>
