@@ -1,1 +1,17 @@
 
+####### Activate Virtual Environment:
+venv/Scripts/activate
+
+####### Go to the DIRECTORY where "Server.py" on the TERMINAL:
+cd ../app/controller
+####### OR
+cd ../controller
+
+####### Once you're in the Directory "Server.py" .. Paste the following command on the TERMINAL:
+pyinstaller --onefile --add-data "../view/index.html;view" --add-data "../view/App.html;view" --add-data "../view/css/log_style.css;view/css" --add-data "../view/css/reset.css;view/css" --add-data "../view/css/responsive.css;view/css" --add-data "../view/css/style.css;view/css" --add-data "../view/js/script.js;view/js" --add-data "../model/StreamLit_App.py;model" --name MeuProjeto Server.py
+
+####### Go To "dist" on the terminal:
+cd dist
+
+####### Run the Executable:
+.\MeuProjeto.exe
